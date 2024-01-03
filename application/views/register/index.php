@@ -41,17 +41,17 @@
           <?= form_error('no_telp'); ?>
         </div>
         <div class="txt_field">
-          <input type="text" required name="email" id="email" value="<?= set_value('email') ?>">
+          <input type="email" required name="email" id="email" value="<?= set_value('email') ?>">
           <span></span>
           <label>Email</label>
         </div>
         <div class="txt_field">
-          <input type="password" required name="password1" id="password"1 value="<?= set_value('password1') ?>">
+          <input type="password" required name="password1" minlength="5" maxlength="16" id="password"1 value="<?= set_value('password1') ?>">
           <span></span>
           <label>Password</label>
         </div>
         <div class="txt_field">
-          <input type="password" required name="password2" id="password2" value="<?= set_value('password2') ?>">
+          <input type="password" required name="password2" minlength="5" maxlength="16" id="password2" value="<?= set_value('password2') ?>">
           <span></span>
           <label>Confirm Password</label>
         </div>
