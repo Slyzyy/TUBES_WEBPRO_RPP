@@ -166,6 +166,80 @@
           
           <!-- Begin Page Content --> <!-- Konten utama mulai dari sini -->
         
+          <div class="container">
+      <div class="content-1">
+        <h2>Pembayaran</h2>
+        <div class="table-responsive">
+          <table class="table table-sm table-hover">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+              </tr>
+            </thead>
+            <tbody class="isi-table">
+              <tr>
+                <th>
+                  <p>1</p>
+                </th>
+                <th>
+                  <p>Obat Telinga Antibiotik</p>
+                </th>
+                <td>
+                  <p>2</p>
+                </td>
+                <td>
+                  <p>Rp 25.000,00</p>
+                </td>
+                <td>
+                  <p>Rp 50.000,00</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>2</p>
+                </th>
+                <th>
+                  <p>Jasa Konsultasi</p>
+                </th>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Rp 100.000,00</p>
+                </td>
+                <td>
+                  <p>Rp 100.000,00</p>
+                </td>
+              </tr>
+              <tr class="table-group-divider">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p class="fw-bold">Total :</p>
+                </td>
+                <td>
+                  <p class="fw-bold">Rp 150.000,00</p>
+                  <button
+                    type="button"
+                    class="btn btn-success mb-3"
+                    style="padding: 5px 35px 5px 35px"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Bayar
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
         </div>
         <!-- End of Main Content -->

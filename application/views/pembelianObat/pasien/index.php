@@ -63,19 +63,19 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item active">
-          <a class="nav-link" href="<?= base_url("p_blog/index") ?>">
+          <a class="nav-link" href="<?= base_url("d_blog/index") ?>">
             <i class="fas fa-fw fa-book"></i>
             <span>Blog</span></a
           >
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="<?= base_url("p_chat/index") ?>">
+          <a class="nav-link" href="<?= base_url("d_chat/index") ?>">
             <i class="fas fa-fw fa-comment-medical"></i>
             <span>Chat</span></a
           >
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="<?= base_url("p_pembelianObat/index") ?>">
+          <a class="nav-link" href="<?= base_url("d_pembelianObat/index") ?>">
             <i class="fas fa-fw fa-capsules"></i>
             <span>Beli Obat</span></a
           >
@@ -164,29 +164,214 @@
           <!-- End of Topbar -->
           
           <!-- Begin Page Content --> <!-- Konten utama mulai dari sini -->
-          <div class="container mt-2">
-            <?php
-            $template = array(
-                'table_open' => '<table id="tbObat" class="table table-striped table-bordered">',
-                'thead_open' => '<thead class="text-center">',
-            );
-
-            $this->table->set_template($template);
-            $this->table->set_heading('Id', 'Nama', 'Kategori', 'Deskripsi', 'Harga', 'Aksi');
-            foreach ($obat as $med) {
-                $this->table->add_row(
-                    $med['id_obat'],
-                    $med['nama'],
-                    $med['kategori'],
-                    $med['deskripsi'],
-                    'Rp ' . number_format($med['harga']),
-                    
-                );
-            }
-            echo $this->table->generate();
-            $this->table->clear();
-            ?>
-        </div>              
+          <div class="content-1">
+      <h2>Pembelian Obat</h2>
+      <div class="table-responsive">
+        <table class="table table-sm table-hover">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Obat</th>
+              <th>Deskripsi Obat</th>
+              <th>Harga</th>
+              <th>Jumlah</th>
+            </tr>
+          </thead>
+          <tbody class="isi-table">
+            <tr>
+              <th>
+                <p>1</p>
+              </th>
+              <th>
+                <p>Obat Telinga Antibiotik</p>
+              </th>
+              <td>
+                <p>
+                  Obat antibiotik meredakan nyeri telinga ringan pada satu atau
+                  kedua telinga.
+                </p>
+              </td>
+              <td>
+                <p>Rp 25.000,00</p>
+              </td>
+              <td>
+                <div class="input-group">
+                  <button
+                    class="btn btn-danger btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    -
+                  </button>
+                  <p style="margin: 10px">0</p>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>2</p>
+              </th>
+              <th>
+                <p>Obat Telinga Kortekosteroid</p>
+              </th>
+              <td>
+                <p>
+                  Untuk meredakan rasa sakit, kemerahan, gatal, dan bengkak pada
+                  telinga akibat peradangan atau alergi.
+                </p>
+              </td>
+              <td>
+                <p>Rp 45.000,00</p>
+              </td>
+              <td>
+                <div class="input-group">
+                  <button
+                    class="btn btn-danger btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    -
+                  </button>
+                  <p style="margin: 10px">0</p>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>3</p>
+              </th>
+              <th>
+                <p>Obat Gigi Ibuprofen</p>
+              </th>
+              <td>
+                <p>
+                  Oban ini bermanfaat untuk mengobati rasa nyeri ringan hingga
+                  sedang.
+                </p>
+              </td>
+              <td>
+                <p>Rp 15.000,00</p>
+              </td>
+              <td>
+                <div class="input-group">
+                  <button
+                    class="btn btn-danger btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    -
+                  </button>
+                  <p style="margin: 10px">0</p>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>4</p>
+              </th>
+              <th>
+                <p>Obat Anak Ondansetron</p>
+              </th>
+              <td>
+                <p>
+                  Obat yang digunakan untuk mencegah serta mengobati mual dan
+                  muntah.
+                </p>
+              </td>
+              <td>
+                <p>Rp 125.000,00</p>
+              </td>
+              <td>
+                <div class="input-group">
+                  <button
+                    class="btn btn-danger btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    -
+                  </button>
+                  <p style="margin: 10px">0</p>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>5</p>
+              </th>
+              <th>
+                <p>Obat Anak Domperidone</p>
+              </th>
+              <td>
+                <p>
+                  Domperidone berfungsi mengurangi rangsangan untuk mual atau
+                  muntah yang berasal dari otak.
+                </p>
+              </td>
+              <td>
+                <p>Rp 115.000,00</p>
+              </td>
+              <td>
+                <div class="input-group">
+                  <button
+                    class="btn btn-danger btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    -
+                  </button>
+                  <p style="margin: 10px">0</p>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    style="padding-left: 15px; padding-right: 15px"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="table-group-divider">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p class="fw-bold">Total :</p>
+              </td>
+              <td>
+                <p class="fw-bold">Rp 150.000,00</p>
+                <button
+                  type="button"
+                  class="btn btn-success mb-3"
+                  style="padding: 5px 35px 5px 35px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Bayar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>             
 
         </div>
         <!-- End of Main Content -->

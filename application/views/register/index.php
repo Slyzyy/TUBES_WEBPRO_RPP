@@ -67,7 +67,7 @@
               Dokter
             </label>
 
-            <input class="form-check-input" type="radio" name="role" id="apoteker" value="apoteker" disabled>
+            <input class="form-check-input" type="radio" name="role" id="apoteker" value="apoteker" required>
             <label class="form-check-label" for="apoteker">
               Apoteker
             </label>

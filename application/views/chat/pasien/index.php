@@ -25,6 +25,7 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('./assets/css/sb-admin-2.min.css" rel="stylesheet') ?> "/>
+    <link href="<?= base_url('./assets/css/style_chat.css" rel="stylesheet') ?> "/>
     <!-- <link href="<?= base_url('./assets/css/style_blog.css" rel="stylesheet') ?> "/> -->
   </head>
 
@@ -166,6 +167,143 @@
           
           <!-- Begin Page Content --> <!-- Konten utama mulai dari sini -->
         
+          <div class="container">
+      <h2>Tab Konsultasi</h2>
+      <div class="card mx-auto">
+        <div class="card-header bg-transparent">
+          <div class="navbar navbar-expand p-0">
+            <ul class="navbar-nav me-auto align-items-center">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <div
+                    class="position-relative"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      border: 2px solid black;
+                      padding: 2px;
+                    "
+                  >
+                    <img
+                      src="assets/dokter gigi.png"
+                      class="img-fluid rounded-circle"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                    >
+                      1
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Dr. Permata</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-phone-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-video"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-times"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body p-4" style="height: 500px; overflow: auto">
+          <div class="bubbleWrapper">
+            <div class="inlineContainer">
+              <img class="inlineIcon" src="assets/dokter gigi.png" />
+              <div class="otherBubble other">
+                Halo User, apakah kendala dan keluhan anda?
+              </div>
+            </div>
+            <span class="other">08:41</span>
+          </div>
+          <div class="bubbleWrapper">
+            <div class="inlineContainer own">
+              <img
+                class="inlineIcon"
+                src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png"
+              />
+              <div class="ownBubble own">
+                Saya punya sakit telinga dok, nyeri di dalam telinga
+              </div>
+            </div>
+            <span class="own">08:55</span>
+          </div>
+          <div class="bubbleWrapper">
+            <div class="inlineContainer">
+              <img class="inlineIcon" src="assets/dokter gigi.png" />
+              <div class="otherBubble other">
+                Sudah berapa lama kondisi ini anda alami?
+              </div>
+            </div>
+          </div>
+          <span class="other">10:13</span>
+          <div class="bubbleWrapper">
+            <div class="inlineContainer own">
+              <img
+                class="inlineIcon"
+                src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png"
+              />
+              <div class="ownBubble own">Sudah sekitar 3 hari dok</div>
+            </div>
+            <span class="own">11:07</span>
+          </div>
+          <div class="bubbleWrapper">
+            <div class="inlineContainer">
+              <img class="inlineIcon" src="assets/dokter gigi.png" />
+              <div class="otherBubble other">
+                Kita sarankan untuk membeli obat telinga Antibiotik
+              </div>
+            </div>
+            <span class="other">11:11</span>
+          </div>
+          <div class="bubbleWrapper">
+            <div class="inlineContainer own">
+              <img
+                class="inlineIcon"
+                src="https://www.pinclipart.com/picdir/middle/205-2059398_blinkk-en-mac-app-store-ninja-icon-transparent.png"
+              />
+              <div class="ownBubble own">Baik dok terimakasih</div>
+            </div>
+            <span class="own">11:13</span>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent">
+          <div class="navbar navbar-expand p-0">
+            <ul class="navbar-nav me-auto align-items-center">
+              <li class="nav-item">
+                <a href="" class="nav-link"> </a>
+              </li>
+              <li class="nav-item">
+                <input class="input" type="text" placeholder="Send Message" />
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
         </div>
         <!-- End of Main Content -->
@@ -227,6 +365,22 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-icon").on("click", function () {
+          $("nav ul").toggleClass("showing");
+        });
+      });
+
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url('./assets/vendor/jquery/jquery.min.js') ?>"></script>

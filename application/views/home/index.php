@@ -29,10 +29,10 @@
         <div class="menu">
           <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="<?php echo base_url('dashboard/index') ?>">Blog</a></li>
-            <li><a href="<?php echo base_url('dashboard/index') ?>">Chat</a></li>
-            <li><a href="<?php echo base_url('dashboard/index') ?>">Pembelian Obat</a></li>
-            <li><a href="<?php echo base_url('dashboard/index') ?>">Pembayaran</a></li>
+            <li><a href="<?php echo base_url('p_blog') ?>">Blog</a></li>
+            <li><a href="<?php echo base_url('p_chat') ?>">Chat</a></li>
+            <li><a href="<?php echo base_url('p_pembelianObat') ?>">Pembelian Obat</a></li>
+            <li><a href="<?php echo base_url('p_pembayaranObat') ?>">Pembayaran</a></li>
             <li><a href="<?php echo base_url('login/index') ?>">Login</a></li>
           </ul>
         </div>
